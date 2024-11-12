@@ -3,9 +3,10 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f8fafc;
+    background-color:  #636efb4d;
     color: #1e293b;
     line-height: 1.5;
+    flex: auto;
 }
 
 /* Container styling */
@@ -20,7 +21,7 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 600;
-    color: #0f172a;
+    color: #3e577d;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -87,7 +88,7 @@ input[type="radio"] {
 }
 
 .rc-slider-track {
-    background-color: #2563eb;
+    background-color: #636efb;
 }
 
 .rc-slider-handle {
@@ -97,15 +98,22 @@ input[type="radio"] {
 }
 
 .rc-slider-mark-text {
-    color: #64748b;
-    font-size: 0.875rem;
+    color: #3d577d;
+    font-size: 1rem;
 }
 
 /* Graph styling */
 .js-plotly-plot {
-    padding: 1rem;
+
+
+    box-shadow: 0 6px 10px #475569;
+
 }
 
+#react-entry-point{
+    padding: 50px;
+
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
@@ -129,7 +137,11 @@ input[type="radio"] {
 }
 
 .ohlc-radio {
+    font-size: 1rem;
     margin: 1rem 0;
+    flex-direction: column;
+    flex: content;
+    
 }
 
 /* Hover effects */
@@ -150,4 +162,15 @@ input[type="radio"] {
 input[type="radio"]:focus + label {
     outline: 2px solid #2563eb;
     outline-offset: 2px;
+}
+
+
+.low_high{
+    color: #3d577d;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: right;
+    flex: content;
+    padding-top: 0px;
+    padding-bottom: 5px;
 }
