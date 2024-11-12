@@ -1,0 +1,153 @@
+/* Main Layout */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+/* Container styling */
+#stock-graph {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+p {
+    color: #475569;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap
+}
+
+/* Dropdown styling */
+.Select-control {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Select-menu-outer {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.Select-value-label {
+    color: #1e293b !important;
+}
+
+/* Radio items styling */
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.radio-group label:hover {
+    background-color: #f1f5f9;
+}
+
+/* Slider styling */
+.rc-slider {
+    margin: 2rem 0;
+}
+
+.rc-slider-track {
+    background-color: #2563eb;
+}
+
+.rc-slider-handle {
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rc-slider-mark-text {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* Graph styling */
+.js-plotly-plot {
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    
+    .radio-group {
+        flex-wrap: wrap;
+    }
+}
+
+/* Custom classes for components */
+.stock-picker {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.ohlc-radio {
+    margin: 1rem 0;
+}
+
+/* Hover effects */
+.Select-control:hover {
+    border-color: #2563eb;
+}
+
+.rc-slider-handle:hover {
+    border-color: #1d4ed8;
+}
+
+/* Focus states for accessibility */
+.Select-control:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+input[type="radio"]:focus + label {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
