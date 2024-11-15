@@ -11,7 +11,7 @@ from functools import cache
 path = "/Users/luddecmc/Desktop/SKOLARBETE-ITHS/repos/AI24-Databehandling/Data/Stocksdata"
 # path = os.path.join(os.path.dirname(__file__), "/../../Data/Stocksdata") # sätter path till filens sökväg
 
-stock_data = StockDataAPI(path)
+stock_data = StockDataLocal(path)
 
 api_key = os.getenv("ALPHA_API_KEY")
 
